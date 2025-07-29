@@ -1,1 +1,7 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:where(.dark) {
+  background-color: #0f172a !important; /* slate-950 */
+}

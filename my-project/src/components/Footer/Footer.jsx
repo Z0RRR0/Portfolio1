@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 export default function Footer() {
     return (
         
-        <footer className="bg-white border-y">
+        <footer className="bg-white dark:bg-slate-950 border-y">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -20,7 +20,7 @@ export default function Footer() {
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-300 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <Link to="/" className="hover:underline">
@@ -40,7 +40,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-300 uppercase">Follow us</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
@@ -75,7 +75,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-300 uppercase">Legal</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <Link to="#" className="hover:underline">
@@ -91,17 +91,17 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                <hr className="my-6 border-gray-300 dark:border-gray-800 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
                         © {year}
-                        <a href="https://www.linkedin.com/in/tushar-bhatt-05738726b/" className="hover:underline">
+                        <a href="https://www.linkedin.com/in/tushar-bhatt-05738726b/" className="hover:underline  hover:text-gray-900 dark:hover:text-gray-300">
                             tusharbhatt
                         </a>
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -117,7 +117,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="https://discord.com/channels/1216249420996411543/1216249421508120708" className="text-gray-500">
+                        <Link to="https://discord.com/channels/1216249420996411543/1216249421508120708" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -129,7 +129,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="https://x.com/TusharB24560947" className="text-gray-500">
+                        <Link to="https://x.com/TusharB24560947" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -145,7 +145,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="https://github.com/Z0RRR0" className="text-gray-500">
+                        <Link to="https://github.com/Z0RRR0" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -161,7 +161,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

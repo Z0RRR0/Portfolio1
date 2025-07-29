@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
+import DropdownMenu from "../Dropdown/DropdownMenu"; // import the component
+
 
 
 export default function Header() {
@@ -43,6 +45,9 @@ export default function Header() {
                     >
                         Contact Me
                     </NavLink>
+                </li>
+                <li className='mx-[10px] cursor-pointer'>
+                    <DropdownMenu />
                 </li>
             </ul>
             <div className='hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer'>

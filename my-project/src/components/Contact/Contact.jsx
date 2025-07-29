@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
-            <div className="p-[10%] h-full w-full m-[10%] bg-gray-100 sm:rounded-lg">
-                <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
+        <div className="relative flex items-top justify-center min-h-[700px] dark:bg-slate-800 bg-white sm:items-center sm:pt-0">
+            <div className="p-[10%] h-full w-full m-[10%] dark:bg-slate-950 bg-gray-100 sm:rounded-lg">
+                <h1 className="text-3xl sm:text-4xl dark:text-slate-300 text-gray-800 font-extrabold tracking-tight">
                     Get in touch: 
                 </h1>
 
