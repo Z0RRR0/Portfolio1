@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {Header, Footer, ThemeBtn, ThemeProvider} from './components'
+import {Header, Footer, ThemeBtn} from './components'
+import { UserContextProvider, ThemeProvider } from './contexts'
 import { Outlet } from 'react-router-dom'
 
 function Layout() {
@@ -34,9 +35,11 @@ function Layout() {
   
   return (
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
-        <Header />
-        <Outlet />
-        <Footer />
+        <UserContextProvider>
+          <Header />
+          <Outlet />
+          <Footer />
+        </UserContextProvider>
     </ThemeProvider>
   )
 }

@@ -50,12 +50,26 @@ export default function Header() {
                     <DropdownMenu />
                 </li>
             </ul>
-            <div className='hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer'>
-                Login/Sign Up
+            <div className="md:hidden block mx-[10px] cursor-pointer">
+                <DropdownMenu />
             </div>
-            <div className='md:hidden'>
+            <div className='md:px-2 md:py-2 text-white dark:text-gray-900 rounded font-bold cursor-pointer'>
+                <NavLink
+                to="/login"
+                className={({isActive}) =>  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-white" : "bg-indigo-700 rounded"}  hidden md:block `}
+                >
+                    Login/Sign Up
+                </NavLink>
+                <NavLink
+                to="/login"
+                className={({isActive}) =>  `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-white" : "bg-indigo-700 rounded text-4xl h-12 w-12 grid place-content-center"}  md:hidden`}
+                >
+                    &#8801;
+                </NavLink>
+            </div>
+            {/* <div className='md:hidden'>
                 <a className='text-4xl font-extrabold' href="#">&#8801;</a>
-            </div>
+            </div> */}
         </nav>
         {/* navbar ends here. */}
         </header>
