@@ -12,7 +12,7 @@ export default function Header() {
         <nav className='w-full h-14 bg-indigo-200 flex justify-between px-4 md:px-4 items-center'>
             <div className='text-2xl text-indigo-700 font-bold'>
                 <Link to="/" className="flex items-center">
-                    Tushar Bhatt        
+                    Tushar Bh@tt        
                 </Link>
             </div>
             <ul className='md:flex hidden font-semibold tracking-tighter'>
